@@ -21,6 +21,26 @@
         <?php wp_head() ?>
     </head>
     <header>
-        
+        <div class="open-nav hidden-lg hidden-md">
+            <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+        </div>
+        <div class="close-nav hidden-lg hidden-md">
+            <i class="fa fa-times fa-2x" aria-hidden="true"></i>
+        </div>
+        <ul>
+            <li>
+                <a href="<?php echo home_url('/') ?>">
+                    <div class="logo">
+                        <div class="title">ANDRÉS SIERRA</div>
+                        <div class="subtitle">photographer</div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <nav id="main-menu">
+                    <?php wp_nav_menu([ 'container' => false, 'menu' => __( 'The Main Menu', 'bonestheme' ), 'theme_location' => 'main-nav' ]) ?>
+                </nav>
+            </li>
+        </ul>
     </header>
     <body <?php body_class() ?>>

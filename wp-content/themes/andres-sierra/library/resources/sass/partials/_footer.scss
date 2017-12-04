@@ -1,1 +1,64 @@
-footer {}
+footer {
+    bottom: 0;
+    position: relative;
+    width: 100%;
+
+    hr {
+        background: $black;
+        border: none;
+        color: $black;
+        height: 2px;
+        margin: 0;
+        position: absolute;
+    }
+
+    ul {
+        margin: 0;
+        padding: 0;
+        position: absolute;
+
+        li {
+            display: inline-block;
+            margin: 0;
+            padding: 0;
+
+            .circle {
+                border-radius: 50%;
+                background: $black;
+                height: 8px;
+                width: 8px;
+            }
+        }
+    }
+
+    .bottom {
+        height: 1.5px;
+        top: -46px;
+        left: 3%;
+        width: 73%;
+    }
+
+    .bottom_circles {
+        top: -56px;
+        left: 4%;
+
+        li { margin: 0 2px; }
+    }
+
+    .bottom_second {
+        height: 1.5px;
+        top: -46px;
+        right: 1.8%;
+        width: 113px;
+
+        li { margin: 0 8px 0 0 }
+    }
+
+    .right {
+        position: absolute;
+        width: 2px;
+        height: 65px;
+        right: 1.8%;
+        top: -110px;
+    }
+}

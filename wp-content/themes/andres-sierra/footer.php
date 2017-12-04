@@ -1,10 +1,7 @@
-        <footer>
-            <div>
-                <nav>
-                    <?php wp_nav_menu([ 'container' => false, 'menu' => __( 'The Main Footer', 'bonestheme' ), 'theme_location' => 'footer-nav' ]) ?>
-                </nav>
-                <p>&copy; <?php echo date('Y') ?> <?php bloginfo('name') ?>.</p>
-            </div>
+        <footer class="container-fluid">
+            <hr class="right">            
+            <hr class="bottom_second">
+            <hr class="bottom">
         </footer>
         <?php wp_footer() ?>
     </body>

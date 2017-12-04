@@ -1,1 +1,69 @@
-header {}
+header {
+    background: rgba(26, 26, 26, 0.8);
+    padding: 21px 44px 6px;
+    position: fixed;
+    z-index: 9999;
+    width: 100%;
+
+    ul {
+        margin: 0;
+        padding: 0;
+
+        li {
+            display: inline-block;
+            margin: 0;
+            padding: 0;
+
+            a {
+                text-decoration: none !important;
+
+                .logo {
+                    left: 27px;
+                    position: relative;
+
+                    .subtitle {
+                        @include fonts( $base, $semibold, 10 );
+                        font-size: 10px;
+                        letter-spacing: 15.5px;
+                        position: relative;
+                        text-transform: uppercase;
+                        top: -10px;
+                    } 
+
+                    .title {
+                        @include fonts( $base, $regular, 34 );
+                        font-size: 34px;
+                        text-transform: uppercase;
+                    }
+
+                    &:before {
+                        content: '';
+                        background: #fff;
+                        height: 48px;
+                        position: absolute;
+                        top: 7px;
+                        left: -18px;
+                        width: 3px;
+                    }
+                }
+            }
+        }
+    }
+
+    .open-nav {
+        position: absolute;
+        right: 15px;
+        top: 12px;
+
+        i { color: #fff; }
+    }
+
+    .close-nav {
+        position: absolute;
+        right: 15px;
+        top: 12px;
+        visibility: hidden;
+
+        i { color: #fff; }
+    }
+}

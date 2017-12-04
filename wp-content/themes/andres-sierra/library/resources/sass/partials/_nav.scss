@@ -1,1 +1,95 @@
-#main-menu {}
+#main-menu {
+    position: absolute;
+    top: 54px;
+    right: 5.8%;
+
+    #menu-main-menu {
+        margin: 0;
+        padding: 0;
+
+        li {
+            margin: 0 0 0px 35px;
+            padding: 0;
+            position: relative;
+
+            a {
+                @include fonts( $base, $semibold, 12px );
+                font-size: 12px;
+                letter-spacing: 7px;
+                text-decoration: none;
+            }
+
+            &:after {
+                content: '';
+                background: $base;
+                height: 1px;
+                position: absolute;
+                left: 0;
+                bottom: -4px;
+                width: 0;
+                transition: all .3s linear;
+            }
+
+            &:hover {
+                &:before {
+                    height: 11px;
+                }
+
+                &:after {
+                    width: 100%;
+                }
+            }
+
+            .sub-menu {
+                background: $base;
+                left: 0;
+                padding: 10px;
+                position: fixed;
+                opacity: 0;
+                visibility: hidden;
+                text-align: center;
+                top: 89px;
+                width: 100%;
+                transition: all .2s linear;
+
+                li {
+                    padding: 0;
+                    margin: 0 12px;
+
+                    a {
+                        @include fonts( $black, $semibold, 11px );
+                        font-size: 11px;
+                        letter-spacing: 6px;
+                    }
+
+                    &:after {
+                        background: $black;
+                        bottom: -1px;
+                        left: 0;
+                    }
+
+                    &:before {
+                        background: $black;
+                        left: 8px;
+                        top: 9px;
+                    }
+                }
+            }
+        }
+
+        .open {
+            &:after {
+                content: none;
+            }
+
+            &:hover {
+                padding-bottom: 31px;
+
+                .sub-menu {
+                    opacity: 1;
+                    visibility: visible;
+                }
+            }
+        }
+    }
+}

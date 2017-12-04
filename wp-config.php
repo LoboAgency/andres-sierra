@@ -33,6 +33,23 @@ define('DB_CHARSET', 'utf8');
 /** Cotejamiento de la base de datos. No lo modifiques si tienes dudas. */
 define('DB_COLLATE', '');
 
+// define('DB_NAME', 'db_as_ph');
+
+// /** Tu nombre de usuario de MySQL */
+// define('DB_USER', 'as_fotografo');
+
+// /** Tu contraseña de MySQL */
+// define('DB_PASSWORD', 'R_iT1Q(shk%g');
+
+// * Host de MySQL (es muy probable que no necesites cambiarlo) 
+// define('DB_HOST', '107.180.2.52');
+
+// /** Codificación de caracteres para la base de datos. */
+// define('DB_CHARSET', 'utf8');
+
+// /** Cotejamiento de la base de datos. No lo modifiques si tienes dudas. */
+// define('DB_COLLATE', '');
+
 /**#@+
  * Claves únicas de autentificación.
  *

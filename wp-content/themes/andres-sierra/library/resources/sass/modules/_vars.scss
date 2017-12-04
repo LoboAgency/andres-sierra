@@ -1,14 +1,17 @@
-$base : white;
+$base : #fff;
+$black : #000;
+$nav  : #1a1a1a;
 
 $img : '../images/';
 $bg  : '../images/backgrounds/';
 $ico : '../images/icons/';
 
-$bold       : '../fonts/OpenSans-Bold';
-$boldi      : '../fonts/OpenSans-BoldItalic';
-$boldex     : '../fonts/OpenSans-Extrabold';
-$boldesi    : '../fonts/OpenSans-ExtraboldItalic';
-$light      : '../fonts/OpenSans-Light';
-$lighti     : '../fonts/OpenSansLight-Italic';
-$semibold   : '../fonts/OpenSans-Semibold';
-$open       : '../fonts/OpenSans';
+$bold       : 'OpenSans-Bold';
+$boldi      : 'OpenSans-BoldItalic';
+$boldex     : 'OpenSans-Extrabold';
+$boldesi    : 'OpenSans-ExtraboldItalic';
+$light      : 'OpenSans-Light';
+$lighti     : 'OpenSansLight-Italic';
+$semibold   : 'OpenSans-Semibold';
+$regular    : 'OpenSans-Regular';
+$open       : 'OpenSans';

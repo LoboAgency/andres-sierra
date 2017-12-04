@@ -28,6 +28,10 @@
     "tests"
   ],
   "dependencies": {
-    "botstrap": "bootstrapp#*"
+    "botstrap": "bootstrapp#*",
+    "wow": "wowjs#^1.1.2",
+    "packery": "^2.1.1",
+    "components-font-awesome": "^4.7.0",
+    "gsap": "^1.20.3"
   }
 }

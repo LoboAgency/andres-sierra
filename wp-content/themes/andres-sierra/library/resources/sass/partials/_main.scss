@@ -1,1 +1,458 @@
-#main {}
+#main {
+    margin-bottom: 113px;
+    
+    #biography {
+        padding-top: 220px;
+
+        .dats {
+            max-height: 630px;
+            overflow: scroll;
+            position: relative;
+            top: 30px;
+
+            .description {
+                @include fonts( #484848, $regular, 18px );
+                font-size: 18px;
+                margin: 20px 0 0;
+                width: 80%;
+            }
+
+            .title {
+                @include fonts( #484848, $bold, 80px );
+                font-size: 80px;
+                line-height: 80px;
+            }
+        }
+
+        .img {
+            img { width: 100%; }
+        }
+    }
+
+    #blog {
+        padding-top: 80px;
+
+        .header {
+            .description {
+                @include fonts( #484848, $regular, 14px );
+                font-size: 14px;
+                margin: 63px auto 0;
+                width: 700px;
+                text-align: center;
+            }
+        
+            .interview {
+                @include fonts( #484848, $regular, 18px );
+                font-size: 18px;
+                letter-spacing: 3px;
+                margin: 69px auto 0;
+                border: #494949 solid 2px;
+                border-radius: 20px;
+                padding: 7px 0;
+                text-align: center;
+                position: relative;
+                width: 215px;
+
+                a {
+                    @include fonts( #484848, $regular, 18px );
+                    font-size: 18px;
+                    text-decoration: none;
+                }
+    
+                &:before {
+                    background: #484848;
+                    border-radius: 50%;
+                    height: 21px;
+                    content: '';
+                    top: -12px;
+                    border: solid #fff 6px;
+                    left: 45%;
+                    position: absolute;
+                    width: 21px;
+                }
+            }
+        
+            .title-basic {
+                @include fonts( #484848, $bold, 82px );
+                font-size: 82px;
+                text-align: center;
+            }
+        }
+
+        .posts {
+            margin-top: 77px;
+
+            .post {
+                margin-bottom: 40px;
+
+                a {
+                    @include fonts( #484848, $bold, 21px );
+                    font-size: 20px;
+                    text-decoration: none;
+
+                    .content-post {
+                        .img {
+                            text-align: center;
+
+                            img {
+                                margin: 0 auto;
+                                width: 100%;
+                            }
+                        }
+
+                        .texts {
+                            margin: 0 14px;
+                            padding: 4px 17px;
+                            position: relative;
+
+                            .date {
+                                @include fonts( #484848, $light, 21px );
+                                font-size: 20px;
+                                margin: 0;
+                            }
+
+                            .title-post {
+                                margin: 0;
+                            }
+
+                            &:before {
+                                content: '';
+                                height: 100%;
+                                background: #484848;
+                                left: 0;
+                                position: absolute;
+                                top: 0;
+                                width: 2px;
+                            }
+
+                            &:after {
+                                content: '';
+                                bottom: 0;
+                                height: 2px;
+                                background: #484848;
+                                left: 0;
+                                position: absolute;
+                                width: 0;
+                                transition: all .2s linear;
+                            }
+                        }
+                    }
+
+                    &:hover {
+                        .content-post {
+                            .texts {
+                                &:after {
+                                   width: 100%; 
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    #blog-int {
+        padding-top: 150px;
+
+        .int-blog {
+            .dats {
+                position: relative;
+                top: 30px;
+
+                .date {
+                    @include fonts( #484848, $bold, 20px );
+                    font-size: 20px;
+                }
+
+                .description {
+                    @include fonts( #484848, $regular, 18px );
+                    font-size: 18px;
+                    margin: 20px 0 0;
+                    width: 80%;
+                }
+
+                .title {
+                    @include fonts( #484848, $bold, 80px );
+                    font-size: 80px;
+                    line-height: 80px;
+                }
+            }
+
+            .img {
+                text-align: center;
+                img { width: 80%; }
+            }
+        }
+    }
+
+    #contact {
+        padding-top: 220px;
+
+        .form {
+            margin: 60px auto 0;
+            width: 500px;
+
+            input[type="text"],
+            input[type="email"],
+            textarea {
+                @include fonts( #fff, $regular, 18px );
+                background: #484848;
+                border: solid #484848 1px;
+                height: 33px;
+                font-size: 18px;
+                width: 100%;
+            }
+
+            input[type="submit"] {
+                @include fonts( #fff, $regular, 18px );
+                background: #484848;
+                border-radius: 0;
+                border: none;
+                font-size: 18px;
+                margin-top: 20px;
+                padding: 4px 16px;
+            }
+
+            textarea { height: auto !important; }
+
+
+            label {
+                @include fonts( #484848, $regular, 18px );
+                font-size: 18px;
+                margin-top: 20px;
+                text-transform: uppercase;
+            }
+        }
+
+        .header {
+            text-align: center;
+
+            .description {
+                @include fonts( #484848, $regular, 14px );
+                font-size: 14px;
+                margin: 63px auto 0;
+                width: 700px;
+            }
+
+            .title {
+                @include fonts( #484848, $bold, 80px );
+                font-size: 80px;
+                line-height: 80px;
+            }
+        }
+    }
+
+    #freepress {
+        .dat {
+            padding-top: 19%;
+            text-align: left;
+
+            .description {
+                @include fonts( #484848, $regular, 18px );
+                font-size: 18px;
+                margin: 63px 0 0;
+                width: 80%;
+            }
+
+            .interview {
+                @include fonts( #484848, $regular, 18px );
+                font-size: 18px;
+                letter-spacing: 3px;
+                margin: 69px 0 0;
+                border: #494949 solid 2px;
+                border-radius: 20px;
+                text-align: center;
+                padding: 7px 0;
+                position: relative;
+                width: 215px;
+
+                a {
+                    @include fonts( #484848, $regular, 18px );
+                    font-size: 18px;
+                    text-decoration: none;
+                }
+
+                &:before {
+                    background: #484848;
+                    border-radius: 50%;
+                    height: 21px;
+                    content: '';
+                    top: -12px;
+                    border: solid #fff 6px;
+                    left: 45%;
+                    position: absolute;
+                    width: 21px;
+                }
+            }
+
+            .title {
+                @include fonts( #484848, $bold, 80px );
+                font-size: 80px;
+                line-height: 80px;
+            }
+        }
+    }
+
+    #post {
+        background: $base;
+        padding-top: 115px;
+        position: relative;
+
+        .dat {
+            padding-top: 19%;
+            text-align: left;
+
+            .description {
+                @include fonts( #484848, $regular, 18px );
+                font-size: 18px;
+                margin: 63px 0 0;
+                width: 80%;
+            }
+
+            .interview {
+                letter-spacing: 3px;
+                margin: 69px 0 0;
+                border: #494949 solid 2px;
+                border-radius: 20px;
+                text-align: center;
+                padding: 7px 0;
+                position: relative;
+                width: 215px;
+
+                a {
+                    @include fonts( #484848, $regular, 18px );
+                    font-size: 18px;
+                    text-decoration: none;
+                }
+
+                &:before {
+                    background: #484848;
+                    border-radius: 50%;
+                    height: 21px;
+                    content: '';
+                    top: -12px;
+                    border: solid #fff 6px;
+                    left: 45%;
+                    position: absolute;
+                    width: 21px;
+                }
+            }
+
+            .title {
+                @include fonts( #484848, $bold, 80px );
+                font-size: 80px;
+                line-height: 80px;
+            }
+        }
+
+        .img-ppal {
+            text-align: center;
+            width: 100%;
+
+            img { margin: 0 auto; width: 90%; }
+        }
+    }
+}
+
+.container-fluid {
+    padding-right: 35px;
+    padding-left: 35px;
+}
+
+.fbx-rounded {
+    .fbx-close {
+        right: 0;
+        box-shadow: none;
+        top: 0;
+    }
+
+    .fbx-count { display: none; }
+
+    .fbx-inner {
+        border: none;
+        border-radius: 0px;
+    }
+
+    .fbx-next {
+        box-shadow: none !important;
+        border-radius: 0px !important;
+        right: 0 !important;
+        width: 16px !important;
+    }
+
+    .fbx-prev {
+        box-shadow: none !important;
+        border-radius: 0px !important;
+        left: 0 !important;
+        width: 16px !important;
+    }
+}
+
+.fbx-light { background-color: rgba(0, 0, 0, 0.91) }
+
+//slider
+.modal-backdrop { opacity: 0.9 !important; }
+.modal-body { padding: 80px 60px 0; }
+.in { opacity: 0.9 !important; }
+
+.modal {
+    .modal-dialog {
+        width: 800px;
+        .modal-content {
+            border: none;
+            background-color: transparent;
+            box-shadow: none;
+            width: 800px;
+        }
+    }
+}
+
+.master-slider-parent { max-width: 100% !important; }
+
+.pop-up {
+    .ms-slide {
+        .ms-slide-bgcont {
+            img { margin-top: 0 !important; }
+        }
+    }
+
+    .ms-view { height: 700px !important; width: 100% !important; }
+    .ms-wk {
+        height: 700px !important;
+        .ms-slide { height: 700px !important; width: 100% !important; }
+    }
+}
+
+.wpml-ls-statics-footer {
+    margin-bottom: 0 !important;
+    height: 0 !important;
+    padding: 0 !important;
+    text-transform: uppercase;
+
+    ul {
+        text-align: right !important;
+        position: relative;
+        right: 12.5%;
+        top: -58px;
+    }
+
+    a {
+       padding: 0;
+        
+        span {
+            @include fonts( $black, $bold, 14px );
+            font-size: 14px;
+            padding: 5px;
+        }
+    }
+}
+
+.wpml-ls-current-language {
+    a {
+        span {
+            color: #fff;
+            background-color: #484848;
+        }
+    }
+}

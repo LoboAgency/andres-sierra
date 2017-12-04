@@ -1,1 +1,25 @@
-#home {}
+#home {
+    .slider {
+        background: #fff;
+    }
+}
+
+.master-slider {
+    img {
+        height: auto !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        width: 94% !important;
+    }
+}
+
+.ms-wk {
+    .ms-slide {
+        text-align: center;
+    }
+}
+
+.ms-bullets {
+    left: -8% !important;
+    bottom: 4% !important;
+}
